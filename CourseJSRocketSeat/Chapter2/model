@@ -1,0 +1,26 @@
+model
+-class
+
+repositories
+class CategoriesRepository
+	create
+	listCategories
+	findByName
+
+services
+class CreateCategoryService
+	execute categoryRepository.
+					create
+					listCategories
+					findByName
+
+routes
+	categoriesRoutes.get
+					.post
+					.delete
+					.put
+
+	createCategoryService
+
+server
+	app.use("", categoriesRoutes)

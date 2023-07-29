@@ -1,0 +1,9 @@
+Existem no total 8 metodos de requisições são eles: 
+- GET
+- PUT
+- POST
+- DELETE
+- TRACE
+- OPTIONS
+- CONNECT
+- HEAD
