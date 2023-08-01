@@ -2,6 +2,8 @@ package IntroductionPOO;
 
 import java.util.Scanner;
 
+import Entities.Triangle;
+
 public class AppTriangule {
 
 	public static void main(String[] args) {

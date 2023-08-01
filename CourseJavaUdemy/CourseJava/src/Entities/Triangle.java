@@ -1,4 +1,4 @@
-package IntroductionPOO;
+package Entities;
 
 public class Triangle {
 
