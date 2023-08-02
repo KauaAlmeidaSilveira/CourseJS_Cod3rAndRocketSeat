@@ -13,22 +13,21 @@ public class AppProduct {
 		
 		Locale.setDefault(Locale.US);
 		
-		Product product = new Product();
-		
 		System.out.printf("Enter product data: %n"
 						+ "Name: ");
-		product.Name = sc.next();
+		String name = sc.next();
 		
 		System.out.print("Price: ");
-		product.Price = sc.nextDouble();
+		Double price = sc.nextDouble();
 		
 		System.out.print("Quantity in stock: ");
-		product.Quantity = sc.nextInt();
+		int quantity = sc.nextInt();
+		
+		Product product = new Product(name, price, quantity);
 		
 		System.out.println("");
 		
-		System.out.printf("Product data: %s, $ %.2f, %d units, Total: $ %.2f%n"
-				, product.Name, product.Price, product.Quantity, product.Price*product.Quantity);
+		product.showInfoProduct();
 		
 		System.out.println("");
 		
