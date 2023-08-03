@@ -1,14 +1,15 @@
 package Entities;
 
+import java.io.PrintStream;
+
 public class Room {
 
-	private int num;
+	private int numRoom;
 	private People people;
-
-	public Room(){}
 	
-	public Room(People people) {
+	public Room(People people, int numRoom) {
 		this.people = people;
+		this.numRoom = numRoom;
 	}
 
 	public People getPeople() {
@@ -17,6 +18,14 @@ public class Room {
 
 	public void setPeople(People people) {
 		this.people = people;
+	}
+
+	public int getnumRoom() {
+		return numRoom;
+	}
+
+	public PrintStream showInfoRoom() {
+		return System.out.printf("%d: %s, %s%n", (numRoom), people.getNome(), people.getEmail());
 	}
 
 }
