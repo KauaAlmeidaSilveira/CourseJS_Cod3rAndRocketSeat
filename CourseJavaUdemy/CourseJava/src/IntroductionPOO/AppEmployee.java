@@ -13,16 +13,16 @@ public class AppEmployee {
 
 		Locale.setDefault(Locale.US);
 		
-		Employee employee = new Employee();
-		
 		System.out.printf("Name: ");
-		employee.Name = sc.nextLine();
+		String name = sc.nextLine();
 		
 		System.out.printf("GrossSalary: ");
-		employee.GrossSalary = sc.nextDouble();
+		Double grossSalary = sc.nextDouble();
 		
 		System.out.printf("Tax: ");
-		employee.Tax = sc.nextDouble();
+		Double tax = sc.nextDouble();
+		
+		Employee employee = new Employee(name, grossSalary, tax);
 		
 		employee.showInfoEmployee();
 		

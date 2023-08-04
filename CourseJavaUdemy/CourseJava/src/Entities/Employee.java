@@ -4,12 +4,27 @@ import java.io.PrintStream;
 
 public class Employee {
 
-	public String Name;
-	public Double GrossSalary;
-	public Double Tax;
+	private Integer Id;
+	private String Name;
+	private Double GrossSalary;
+	private Double Tax;
 	
 	Boolean update = false;
 	
+	public Employee() {}
+	
+	public Employee(Integer id, String name, Double grossSalary) {
+		Id = id;
+		Name = name;
+		GrossSalary = grossSalary;
+	}
+
+	public Employee(String name, Double grossSalary, Double tax) {
+		Name = name;
+		GrossSalary = grossSalary;
+		Tax = tax;
+	}
+
 	public double netSalary() {
 		return this.GrossSalary - this.Tax;
 	}
@@ -24,5 +39,33 @@ public class Employee {
 			return System.out.printf("%nEmployee: %s, $ %.2f%n%n", this.Name, this.netSalary());
 		}
 		return System.out.printf("%nUpdate data: %s, $ %.2f%n", this.Name, this.netSalary());
+	}
+
+	public Double getGrossSalary() {
+		return GrossSalary;
+	}
+
+	public void setGrossSalary(Double grossSalary) {
+		GrossSalary = grossSalary;
+	}
+
+	public Double getTax() {
+		return Tax;
+	}
+
+	public void setTax(Double tax) {
+		Tax = tax;
+	}
+
+	public Integer getId() {
+		return Id;
+	}
+
+	public String getName() {
+		return Name;
+	}
+	
+	public void setName(String name) {
+		Name = name;
 	}
 }
