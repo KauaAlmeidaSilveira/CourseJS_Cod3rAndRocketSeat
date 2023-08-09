@@ -16,7 +16,7 @@ public class DataHora {
 		/*
 		 * LocalDate - Data
 		 * LocalDateTime - Data e Tempo
-		 * Instant - Data, Tempo e o TimeZone
+		 * Instant - Data, Tempo e o Fuso
 		*/
 		
 		LocalDate d01 = LocalDate.now(); //Data
