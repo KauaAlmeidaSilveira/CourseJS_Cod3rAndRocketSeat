@@ -32,7 +32,7 @@ public class DateCalendar {
 		
 		System.out.println("-------------");
 		
-		System.out.println("x1: " + sdf2.format(x1));
+		System.out.println("x1: " + sdf1.format(x1));
 		System.out.println("x2: " + sdf2.format(x2));
 		System.out.println("x3: " + sdf2.format(x3));
 		System.out.println("x4: " + sdf2.format(x4));
@@ -49,6 +49,13 @@ public class DateCalendar {
 		System.out.println("y1: " + sdf3.format(y1));
 		System.out.println("y2: " + sdf3.format(y2));
 		System.out.println("y3: " + sdf3.format(y3));
+		
+		System.out.println("-------------");
+		
+		Date date = sdf1.parse("25/08/2018");
+		System.out.println(date);
+		
+		System.out.println(sdf1.format(date));
 	}
 
 }

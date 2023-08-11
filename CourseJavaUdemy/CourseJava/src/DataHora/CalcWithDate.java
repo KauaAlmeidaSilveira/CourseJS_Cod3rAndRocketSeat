@@ -41,6 +41,14 @@ public class CalcWithDate {
 		System.out.println("t2 = " + t2.toDays());
 		System.out.println("t3 = " + t3.toDays());
 		System.out.println("t4 = " + t4.toDays());
+		
+		LocalDate test = LocalDate.parse("2023-06-01");
+		
+		LocalDate testYear = test.plusYears(2);
+		LocalDate testMonths = testYear.plusMonths(6);
+		
+		
+		System.out.println(testMonths);
 	}
 
 }
