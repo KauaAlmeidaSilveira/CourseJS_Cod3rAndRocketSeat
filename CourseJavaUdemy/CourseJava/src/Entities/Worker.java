@@ -1,5 +1,6 @@
 package Entities;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -67,8 +68,10 @@ public class Worker {
 	public Double income(Integer year, Integer month) {
 		double sum = baseSalary;
 		
+		SimpleDateFormat formatLocalDate = new SimpleDateFormat("yyyy-MM-dd");
+		
 		for(HourContract contract : contracts) {
-			LocalDate localDate = LocalDate.parse(contract.getDateString());
+			LocalDate localDate = LocalDate.parse(formatLocalDate.format(contract.getDate()));
 			if(localDate.getMonthValue() == month && localDate.getYear() == year) {
 				sum += contract.totalVlr();
 			}

@@ -38,6 +38,7 @@ public class AppWorker {
 		int numContracts = sc.nextInt();
 		
 		for(int i = 1; i<=numContracts; i++) {
+			System.out.printf("Enter contract #%d data:%n", i);
 			System.out.print("Date (DD/MM/YYYY): ");
 			Date date = sdf1.parse(sc.next());
 			System.out.print("Value per hour: ");
@@ -50,17 +51,19 @@ public class AppWorker {
 		}
 		
 		sc.nextLine();
-		System.out.print("Enter month and year to calculate income (YYYY/MM/DD): ");
-		String date = sc.nextLine();
+		System.out.print("Enter month and year to calculate income: ");
+		Date date = sdf1.parse("01/" + sc.nextLine());
 		
-		LocalDate localDate = LocalDate.parse(date + "-01" );
+		SimpleDateFormat formatLocalDate = new SimpleDateFormat("yyyy-MM-dd");
+		
+		LocalDate localDate = LocalDate.parse(formatLocalDate.format(date));
 		int month = localDate.getMonthValue();
 		int year = localDate.getYear();
 		
 		System.out.printf("Name: %s%n"
 						+ "Department: %s%n", worker.getName(), worker.getDepartment());
 		
-		System.out.printf("Income for %s: %.2f", date, worker.income(year, month));
+		System.out.printf("Income for %s: %.2f", sdf1.format(date), worker.income(year, month));
 		
 		sc.close();
 	} 

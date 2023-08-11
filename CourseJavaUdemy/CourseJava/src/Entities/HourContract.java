@@ -1,6 +1,5 @@
 package Entities;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class HourContract {
@@ -43,10 +42,5 @@ public class HourContract {
 	
 	public Double totalVlr() {
 		return this.vlrPerHour*this.hours;
-	}
-	
-	public String getDateString() {
-		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-		return sdf1.format(date);
 	}
 }
