@@ -1,19 +1,33 @@
 package Entities;
 
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
 
 import Entities.enums.OrderStatus;
 
 public class Order {
 
 	private Integer id;
-	private Date moment;
+	private LocalDateTime moment;
 	private OrderStatus status;
+	
+	private Client client;
+	private List<OrderItem> orderItems = new ArrayList<>();
+	private DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	private DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 	
 	public Order() {}
 
-	public Order(Integer id, Date moment, OrderStatus status) {
+	public Order(Integer id, LocalDateTime moment, OrderStatus status) {
 		this.id = id;
+		this.moment = moment;
+		this.status = status;
+	}
+	
+	public Order(Client client, LocalDateTime moment, OrderStatus status) {
+		this.client = client;
 		this.moment = moment;
 		this.status = status;
 	}
@@ -26,12 +40,8 @@ public class Order {
 		this.id = id;
 	}
 
-	public Date getMoment() {
-		return moment;
-	}
-
-	public void setMoment(Date moment) {
-		this.moment = moment;
+	public String getMoment() {
+		return fmt.format(moment);
 	}
 
 	public OrderStatus getStatus() {
@@ -41,10 +51,25 @@ public class Order {
 	public void setStatus(OrderStatus status) {
 		this.status = status;
 	}
+	
+	public List<OrderItem> getOrderItems() {
+		return orderItems;
+	}
 
-	@Override
-	public String toString() {
-		return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
+	public void addItem(OrderItem orderItem) {
+		this.orderItems.add(orderItem);
+	}
+	
+	public void removeItem(OrderItem orderItem) {
+		if(orderItem != null) {
+			this.orderItems.add(orderItem);
+		}
+	}
+	
+	public String showInfoOrder() {
+		return "Order moment: " + fmt2.format(moment) + "\n"
+			 + "Order status: " + status + "\n"
+			 + client.showInfoClient();
 	}
 	
 }

@@ -27,19 +27,19 @@ public class AppProduct {
 		
 		System.out.println("");
 		
-		product.showInfoProduct();
+		product.showInfoProductPrintStream();
 		
 		System.out.println("");
 		
 		System.out.print("Enter the number of products to be added in stock: ");
 		product.addProducts(sc.nextInt());
-		product.showInfoProduct();
+		product.showInfoProductPrintStream();
 		
 		System.out.println("");
 		
 		System.out.print("Enter the number of products to be removed in stock: ");
 		product.removeProducts(sc.nextInt());
-		product.showInfoProduct();
+		product.showInfoProductPrintStream();
 		
 		sc.close();
 	}

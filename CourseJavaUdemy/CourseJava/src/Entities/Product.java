@@ -55,7 +55,7 @@ public class Product {
 		this.Quantity -= quantity;
 	}
 	
-	public PrintStream showInfoProduct() {
+	public PrintStream showInfoProductPrintStream() {
 		
 		if(!update) {
 			update = true;
