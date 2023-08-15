@@ -71,11 +71,10 @@ public class AppOrder {
 		
 		System.out.println("Order Items: ");
 		
-		order.getOrderItems().forEach(item -> {
-			System.out.printf("%s, $%.2f, Quantity: %d, Subtotal: $%.2f%n", item.getProduct().getName(),
-					item.getProduct().getPrice(), item.getQuantity(), item.subTotal());
-
-		});
+		order.getOrderItems().forEach(item ->
+				System.out.printf("%s, $%.2f, Quantity: %d, Subtotal: $%.2f%n", item.getProduct().getName(),
+						item.getProduct().getPrice(), item.getQuantity(), item.subTotal())
+		);
 		
 		double sumSubTotalOrderItems = 0;
 		
