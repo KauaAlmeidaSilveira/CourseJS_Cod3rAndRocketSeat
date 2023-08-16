@@ -11,18 +11,18 @@ public class AppAccount {
 
 		Account account;
 		
-		System.out.printf("Enter account number: ");
+		System.out.print("Enter account number: ");
 		int number = sc.nextInt();
 
 		sc.nextLine();
-		System.out.printf("Enter account holder: ");
+		System.out.print("Enter account holder: ");
 		String holder = sc.nextLine();
 		
-		System.out.printf("Is there na initial deposit (y/n)? ");
+		System.out.print("Is there na initial deposit (y/n)? ");
 		String initialDeposit = sc.nextLine();
 		
 		if(initialDeposit.charAt(0) == 'y') {
-			System.out.printf("Enter initial deposit value: ");
+			System.out.print("Enter initial deposit value: ");
 			double initialBalance = sc.nextDouble();
 			account = new Account(number, holder, initialBalance);
 		}else {
@@ -38,6 +38,8 @@ public class AppAccount {
 		System.out.printf("%nEnter a withdraw value: ");
 		double withdraw = sc.nextDouble();
 		account.withdraw(withdraw);
+
+		account.showInfoAccount();
 		
 		sc.close();
 	}

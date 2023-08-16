@@ -1,0 +1,6 @@
+A utilização do final em classes e métodos, tem resultados diferentes...
+
+No caso das classes, ao utilizar final, estamos dizendo que a classe X,
+não pode possuir subclasses.
+
+Já nos metodos, o final serve para impedir que o metodo seja sobrescrito.

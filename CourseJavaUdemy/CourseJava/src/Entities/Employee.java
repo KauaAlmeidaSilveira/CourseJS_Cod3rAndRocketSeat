@@ -5,14 +5,20 @@ import java.io.PrintStream;
 public class Employee {
 
 	private Integer Id;
-	private String Name;
+	protected String Name;
 	private Double GrossSalary;
 	private Double Tax;
+	protected Integer Hour;
+	protected Double VlrPerHour;
 	
 	Boolean update = false;
-	
-	public Employee() {}
-	
+
+	public Employee(String name, Integer hour, Double vlrPerHour) {
+		Name = name;
+		Hour = hour;
+		VlrPerHour = vlrPerHour;
+	}
+
 	public Employee(Integer id, String name, Double grossSalary) {
 		Id = id;
 		Name = name;
@@ -67,5 +73,25 @@ public class Employee {
 	
 	public void setName(String name) {
 		Name = name;
+	}
+
+	public Integer getHour() {
+		return Hour;
+	}
+
+	public void setHour(Integer hour) {
+		Hour = hour;
+	}
+
+	public Double getVlrPerHour() {
+		return VlrPerHour;
+	}
+
+	public void setVlrPerHour(Double vlrPerHour) {
+		VlrPerHour = vlrPerHour;
+	}
+
+	public Double payment(){
+		return Hour*VlrPerHour;
 	}
 }

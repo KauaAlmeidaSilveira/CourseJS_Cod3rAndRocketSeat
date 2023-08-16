@@ -4,9 +4,10 @@ import java.io.PrintStream;
 
 public class Product {
 
-	private String Name;
-	private Double Price;
+	protected String Name;
+	protected Double Price;
 	private Integer Quantity;
+
 	
 	Boolean update = false;
 
@@ -66,5 +67,8 @@ public class Product {
 		return System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f%n", 
 				this.Name, this.Price, this.Quantity, this.Price*this.Quantity);
 	}
-	
+
+	public String priceTag(){
+		return Name + " $ " + Price;
+	}
 }

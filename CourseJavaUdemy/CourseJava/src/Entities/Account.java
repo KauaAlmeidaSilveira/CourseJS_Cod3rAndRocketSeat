@@ -1,15 +1,11 @@
 package Entities;
 
-import java.io.PrintStream;
-
 public class Account {
 
 	private Integer number;
 	private String holder;
-	private double balance;
-	
-	private int tax = 5;
-	
+	protected Double balance;
+
 	public Account(Integer number, String holder, double balance) {
 		this.number = number;
 		this.holder = holder;
@@ -31,21 +27,17 @@ public class Account {
 		return balance;
 	}
 
-	public PrintStream deposit(double deposit) {
+	public void deposit(double deposit) {
 		this.balance += deposit;
-		return System.out.printf("Updated account data:%n"
-								+"Account %d, Holder: %s, Balance: $ %.2f%n", this.number, this.holder, this.balance); 
 	}
 	
-	public PrintStream withdraw(double withdraw) {
-		this.balance -= withdraw+tax;
-		return System.out.printf("Updated account data:%n"
-								+"Account %d, Holder: %s, Balance: $ %.2f%n", this.number, this.holder, this.balance); 
+	public void withdraw(double withdraw) {
+		this.balance -= withdraw + 5;
 	}
-	
-	public PrintStream showInfoAccount() {
-		return System.out.printf("%nAccount data:%n"
-								+"Account %d, Holder: %s, Balance: $ %.2f%n", this.number, this.holder, this.balance);
+
+	public void showInfoAccount() {
+		System.out.printf("%nAccount data:%n"
+				+ "Account %d, Holder: %s, Balance: $ %.2f%n", this.number, this.holder, this.balance);
 	}
 	
 	public String toString() {
