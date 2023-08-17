@@ -54,9 +54,7 @@ public class AppProductUsedImported {
 
         System.out.println("Price Tags: ");
 
-        products.forEach(product -> {
-            System.out.println(product.priceTag());
-        });
+        products.forEach(product -> System.out.println(product.priceTag()));
 
         sc.close();
     }
