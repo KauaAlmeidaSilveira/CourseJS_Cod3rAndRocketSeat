@@ -2,7 +2,7 @@ package IntroductionPOO;
 
 import java.util.Scanner;
 
-import Entities.Account;
+import Model.Entities.Account;
 
 public class AppAccount {
 

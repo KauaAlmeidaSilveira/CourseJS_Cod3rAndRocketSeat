@@ -1,8 +1,8 @@
 package HerancaPolimorfismo;
 
-import Entities.Account;
-import Entities.BusinessAccount;
-import Entities.SavingsAccount;
+import Model.Entities.Account;
+import Model.Entities.BusinessAccount;
+import Model.Entities.SavingsAccount;
 
 public class SobreposicaoOverride {
     public static void main(String[] args) {

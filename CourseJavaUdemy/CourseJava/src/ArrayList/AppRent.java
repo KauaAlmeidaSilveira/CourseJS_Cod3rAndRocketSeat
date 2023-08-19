@@ -3,8 +3,8 @@ package ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Entities.People;
-import Entities.Room;
+import Model.Entities.People;
+import Model.Entities.Room;
 
 public class AppRent {
 

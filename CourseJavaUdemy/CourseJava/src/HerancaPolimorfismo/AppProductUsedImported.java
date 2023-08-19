@@ -1,8 +1,8 @@
 package HerancaPolimorfismo;
 
-import Entities.ImportedProduct;
-import Entities.Product;
-import Entities.UsedProduct;
+import Model.Entities.ImportedProduct;
+import Model.Entities.Product;
+import Model.Entities.UsedProduct;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

@@ -5,8 +5,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-import Entities.Comment;
-import Entities.Post;
+import Model.Entities.Comment;
+import Model.Entities.Post;
 
 public class AppPost {
 

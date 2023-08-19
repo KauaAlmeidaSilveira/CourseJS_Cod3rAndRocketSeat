@@ -1,7 +1,7 @@
 package HerancaPolimorfismo;
 
-import Entities.Employee;
-import Entities.OutsourcedEmployee;
+import Model.Entities.Employee;
+import Model.Entities.OutsourcedEmployee;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,9 @@
 package HerancaPolimorfismo;
 
-import Entities.Circle;
-import Entities.Rectangle;
-import Entities.Shape;
-import Entities.enums.Color;
+import Model.Entities.Circle;
+import Model.Entities.Rectangle;
+import Model.Entities.Shape;
+import Model.Enums.Color;
 
 import java.util.ArrayList;
 import java.util.List;

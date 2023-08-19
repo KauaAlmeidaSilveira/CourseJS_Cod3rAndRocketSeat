@@ -2,8 +2,8 @@ package EnumComposition;
 
 import java.time.LocalDateTime;
 
-import Entities.Order;
-import Entities.enums.OrderStatus;
+import Model.Entities.Order;
+import Model.Enums.OrderStatus;
 
 public class AppOrderTestEnum {
 

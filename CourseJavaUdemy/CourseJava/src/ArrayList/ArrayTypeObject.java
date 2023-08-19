@@ -3,7 +3,7 @@ package ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Entities.Product;
+import Model.Entities.Product;
 
 public class ArrayTypeObject {
 

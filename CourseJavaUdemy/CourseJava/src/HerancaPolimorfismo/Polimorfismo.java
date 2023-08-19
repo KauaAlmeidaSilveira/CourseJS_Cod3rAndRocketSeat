@@ -1,7 +1,7 @@
 package HerancaPolimorfismo;
 
-import Entities.Account;
-import Entities.SavingsAccount;
+import Model.Entities.Account;
+import Model.Entities.SavingsAccount;
 
 public class Polimorfismo {
     public static void main(String[] args) {

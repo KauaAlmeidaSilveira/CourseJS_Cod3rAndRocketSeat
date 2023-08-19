@@ -1,8 +1,8 @@
 package HerancaPolimorfismo;
 
-import Entities.LegalPerson;
-import Entities.Person;
-import Entities.Taxpayer;
+import Model.Entities.LegalPerson;
+import Model.Entities.Person;
+import Model.Entities.Taxpayer;
 
 import java.util.ArrayList;
 import java.util.List;

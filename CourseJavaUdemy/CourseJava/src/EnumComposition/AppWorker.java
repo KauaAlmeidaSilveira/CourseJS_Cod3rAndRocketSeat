@@ -7,10 +7,10 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Entities.Department;
-import Entities.HourContract;
-import Entities.Worker;
-import Entities.enums.WorkerLevel;
+import Model.Entities.Department;
+import Model.Entities.HourContract;
+import Model.Entities.Worker;
+import Model.Enums.WorkerLevel;
 
 public class AppWorker {
 

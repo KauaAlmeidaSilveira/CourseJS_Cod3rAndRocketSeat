@@ -6,11 +6,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Entities.Client;
-import Entities.Order;
-import Entities.OrderItem;
-import Entities.Product;
-import Entities.enums.OrderStatus;
+import Model.Entities.Client;
+import Model.Entities.Order;
+import Model.Entities.OrderItem;
+import Model.Entities.Product;
+import Model.Enums.OrderStatus;
 
 public class AppOrder {
 

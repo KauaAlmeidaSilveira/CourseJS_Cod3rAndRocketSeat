@@ -3,7 +3,7 @@ package ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Entities.People;
+import Model.Entities.People;
 
 public class AppPeople {
 	

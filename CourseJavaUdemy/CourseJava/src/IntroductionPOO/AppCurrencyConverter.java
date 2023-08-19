@@ -2,7 +2,7 @@ package IntroductionPOO;
 
 import java.util.Scanner;
 
-import Entities.CurrencyConverter;
+import Model.Entities.CurrencyConverter;
 
 public class AppCurrencyConverter {
 

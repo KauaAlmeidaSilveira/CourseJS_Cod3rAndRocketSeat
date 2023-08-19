@@ -2,7 +2,7 @@ package IntroductionPOO;
 
 import java.util.Scanner;
 
-import Entities.Triangle;
+import Model.Entities.Triangle;
 
 public class AppTriangule {
 
