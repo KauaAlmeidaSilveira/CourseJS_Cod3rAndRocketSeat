@@ -1,4 +1,4 @@
-package readingFile;
+package ReadingFile;
 
 import java.io.File;
 import java.util.Scanner;
