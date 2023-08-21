@@ -71,4 +71,12 @@ public class Product {
 	public String priceTag(){
 		return Name + " $ " + Price;
 	}
+
+	public Double totalPrice(){
+		return Price*Quantity;
+	}
+
+	public String summary(){
+		return String.format("%s, %.2f", Name, totalPrice());
+	}
 }
