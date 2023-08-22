@@ -2139,7 +2139,7 @@
   <commands xmi:id="_8R2WFC-4Ee62jMkjw9rJhA" elementId="org.eclipse.ui.editors.revisions.rendering.cycle" commandName="Cycle Revision Coloring Mode" description="Cycles through the available coloring modes for revisions" category="_8RrW5C-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_8R2WFS-4Ee62jMkjw9rJhA" elementId="org.eclipse.ant.ui.renameInFile" commandName="Rename In File" description="Renames all references within the same buildfile" category="_8RvBQC-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_8R2WFi-4Ee62jMkjw9rJhA" elementId="org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy" commandName="Open Type Hierarchy" description="Open a type hierarchy on the selected element" category="_8RuaNy-4Ee62jMkjw9rJhA"/>
-  <commands xmi:id="_8R2WFy-4Ee62jMkjw9rJhA" elementId="org.eclipse.jdt.ui.edit.text.java.extract.interface" commandName="Extract Interface" description="Extract a set of members into a new interface and try to use the new interface" category="_8RuaPS-4Ee62jMkjw9rJhA"/>
+  <commands xmi:id="_8R2WFy-4Ee62jMkjw9rJhA" elementId="org.eclipse.jdt.ui.edit.text.java.extract.interface" commandName="Extract Interfaces" description="Extract a set of members into a new interface and try to use the new interface" category="_8RuaPS-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_8R2WGC-4Ee62jMkjw9rJhA" elementId="org.eclipse.ltk.ui.refactoring.commands.moveResources" commandName="Move Resources" description="Move the selected resources and notify LTK participants." category="_8RuaRi-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_8R2WGS-4Ee62jMkjw9rJhA" elementId="org.eclipse.m2e.actions.LifeCycleGenerateSources.run" commandName="Run Maven Generate Sources" description="Run Maven Generate Sources" category="_8RrW8y-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_8R2WGi-4Ee62jMkjw9rJhA" elementId="org.eclipse.debug.ui.commands.StepInto" commandName="Step Into" description="Step into" category="_8RrW8y-4Ee62jMkjw9rJhA"/>
@@ -3376,7 +3376,7 @@
   <categories xmi:id="_8RrW4i-4Ee62jMkjw9rJhA" elementId="org.eclipse.buildship.ui.project" name="Buildship" description="Contains the Buildship specific commands"/>
   <categories xmi:id="_8RrW4y-4Ee62jMkjw9rJhA" elementId="org.eclipse.mylyn.builds.ui.category.Commands" name="Builds"/>
   <categories xmi:id="_8RrW5C-4Ee62jMkjw9rJhA" elementId="org.eclipse.ui.category.textEditor" name="Text Editing" description="Text Editing Commands"/>
-  <categories xmi:id="_8RrW5S-4Ee62jMkjw9rJhA" elementId="org.eclipse.mylyn.context.ui.commands" name="Focused UI" description="Task-Focused Interface"/>
+  <categories xmi:id="_8RrW5S-4Ee62jMkjw9rJhA" elementId="org.eclipse.mylyn.context.ui.commands" name="Focused UI" description="Task-Focused Interfaces"/>
   <categories xmi:id="_8RrW5i-4Ee62jMkjw9rJhA" elementId="org.eclipse.wst.jsdt.ui.category.source" name="Source" description="JavaScript Source Actions"/>
   <categories xmi:id="_8RrW5y-4Ee62jMkjw9rJhA" elementId="org.eclipse.mylyn.tasks.ui.commands" name="Task Repositories"/>
   <categories xmi:id="_8RrW6C-4Ee62jMkjw9rJhA" elementId="com.genuitec.eclipse.lsp4e.category" name="Language Servers"/>
@@ -3410,7 +3410,7 @@
   <categories xmi:id="_8RuaNS-4Ee62jMkjw9rJhA" elementId="org.eclipse.oomph.setup.category" name="Oomph Setup"/>
   <categories xmi:id="_8RuaNi-4Ee62jMkjw9rJhA" elementId="org.eclipse.codegen.ui.jet.source" name="JET Source Actions"/>
   <categories xmi:id="_8RuaNy-4Ee62jMkjw9rJhA" elementId="org.eclipse.ui.category.navigate" name="Navigate"/>
-  <categories xmi:id="_8RuaOC-4Ee62jMkjw9rJhA" elementId="org.eclipse.mylyn.java.ui.commands" name="Java Context" description="Java Task-Focused Interface Commands"/>
+  <categories xmi:id="_8RuaOC-4Ee62jMkjw9rJhA" elementId="org.eclipse.mylyn.java.ui.commands" name="Java Context" description="Java Task-Focused Interfaces Commands"/>
   <categories xmi:id="_8RuaOS-4Ee62jMkjw9rJhA" elementId="org.eclipse.lsp4e.category" name="Language Servers"/>
   <categories xmi:id="_8RuaOi-4Ee62jMkjw9rJhA" elementId="org.eclipse.tm.terminal.view.ui.commands.category" name="Terminal Commands"/>
   <categories xmi:id="_8RuaOy-4Ee62jMkjw9rJhA" elementId="org.eclipse.compare.ui.category.compare" name="Compare" description="Compare command category"/>

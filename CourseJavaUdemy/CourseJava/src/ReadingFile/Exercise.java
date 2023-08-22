@@ -1,6 +1,6 @@
 package ReadingFile;
 
-import Entities.Product;
+import Model.Entities.Product;
 
 import java.io.*;
 import java.util.ArrayList;
