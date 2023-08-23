@@ -1,0 +1,7 @@
+/bin
+bin/
+/.settings
+.class
+.idea/
+.metadata
+ProjectClient.iml

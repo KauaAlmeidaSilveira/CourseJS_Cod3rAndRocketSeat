@@ -9,7 +9,6 @@ public class CarRental {
     private LocalDateTime returnCar;
     private Double pricePerHour;
     private Double pricePerDay;
-    private Double tax;
 
     public CarRental(String modelCar, LocalDateTime pickupCar, LocalDateTime returnCar, Double pricePerHour, Double pricePerDay) {
         this.modelCar = modelCar;
