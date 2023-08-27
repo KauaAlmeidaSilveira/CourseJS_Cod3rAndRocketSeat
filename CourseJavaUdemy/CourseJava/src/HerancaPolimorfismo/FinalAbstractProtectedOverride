@@ -7,6 +7,10 @@ não pode possuir subclasses.
 
 Já nos metodos, o final serve para impedir que o metodo seja sobrescrito.
 
+Já nos atributos, quando você declara um atributo como final, você está indicando que o valor desse
+atributo não pode ser alterado após ser inicializado. Isso significa que, uma vez
+atribuído um valor a um atributo final, ele não pode ser modificado durante a vida do objeto.
+
 ---------------------------------  Abstract  ---------------------------------
 
 O Abstract impede que seja criada uma instanciação da superclasse.

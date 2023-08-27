@@ -4,89 +4,47 @@ import java.time.LocalDateTime;
 
 public class CarRental {
 
-    private String modelCar;
-    private LocalDateTime pickupCar;
-    private LocalDateTime returnCar;
-    private Double pricePerHour;
-    private Double pricePerDay;
+    private LocalDateTime start;
+    private LocalDateTime finish;
 
-    public CarRental(String modelCar, LocalDateTime pickupCar, LocalDateTime returnCar, Double pricePerHour, Double pricePerDay) {
-        this.modelCar = modelCar;
-        this.pickupCar = pickupCar;
-        this.returnCar = returnCar;
-        this.pricePerHour = pricePerHour;
-        this.pricePerDay = pricePerDay;
+    private Vehicle vehicle;
+    private Invoice invoice;
+
+    public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle vehicle) {
+        this.start = start;
+        this.finish = finish;
+        this.vehicle = vehicle;
     }
 
-    public String getModelCar() {
-        return modelCar;
+    public LocalDateTime getStart() {
+        return start;
     }
 
-    public void setModelCar(String modelCar) {
-        this.modelCar = modelCar;
+    public void setStart(LocalDateTime start) {
+        this.start = start;
     }
 
-    public LocalDateTime getPickupCar() {
-        return pickupCar;
+    public LocalDateTime getFinish() {
+        return finish;
     }
 
-    public void setPickupCar(LocalDateTime pickupCar) {
-        this.pickupCar = pickupCar;
+    public void setFinish(LocalDateTime finish) {
+        this.finish = finish;
     }
 
-    public LocalDateTime getReturnCar() {
-        return returnCar;
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 
-    public void setReturnCar(LocalDateTime returnCar) {
-        this.returnCar = returnCar;
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 
-    public Double getPricePerHour() {
-        return pricePerHour;
+    public Invoice getInvoice() {
+        return invoice;
     }
 
-    public void setPricePerHour(Double pricePerHour) {
-        this.pricePerHour = pricePerHour;
+    public void setInvoice(Invoice invoice) {
+        this.invoice = invoice;
     }
-
-    public Double getPricePerDay() {
-        return pricePerDay;
-    }
-
-    public void setPricePerDay(Double pricePerDay) {
-        this.pricePerDay = pricePerDay;
-    }
-
-    public Double payment(){
-        int days = returnCar.getDayOfMonth() - pickupCar.getDayOfMonth();
-        int hours = returnCar.getHour() - pickupCar.getHour();
-        int seconds = returnCar.getSecond() - pickupCar.getSecond();
-
-        double vlrTotal;
-
-        if(days != 0 || hours > 12){
-            double vlrDays = days*pricePerDay;
-            return vlrDays+130;
-        }else{
-            if(returnCar.getMinute() + pickupCar.getMinute() > 30){
-                return (hours+1)*pricePerHour;
-            }else{
-                return hours*pricePerHour;
-            }
-        }
-    }
-
-    public Double tax(){
-        if(payment() <= 100){
-            return payment()*0.2;
-        }else{
-            return payment()*0.15;
-        }
-    }
-
-    public Double paymentWithTaxes(){
-        return payment()+tax();
-    }
-
 }

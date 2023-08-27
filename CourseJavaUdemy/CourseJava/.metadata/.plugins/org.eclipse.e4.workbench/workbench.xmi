@@ -1707,11 +1707,11 @@
     <tags>View</tags>
     <tags>categoryTag:JavaServer Faces</tags>
   </descriptors>
-  <descriptors xmi:id="_88ToQC-4Ee62jMkjw9rJhA" elementId="org.eclipse.jst.ws.jaxws.ui.views.AnnotationsView" label="Annotation Properties" iconURI="platform:/plugin/org.eclipse.jst.ws.jaxws.ui/icons/eview16/prop_ps.gif" tooltip="" category="Web Services" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_88ToQC-4Ee62jMkjw9rJhA" elementId="org.eclipse.jst.ws.jaxws.ui.views.AnnotationsView" label="Annotation Properties" iconURI="platform:/plugin/org.eclipse.jst.ws.jaxws.ui/icons/eview16/prop_ps.gif" tooltip="" category="Web Model.Services" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="org.eclipse.jst.ws.internal.jaxws.ui.views.AnnotationsView"/>
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.jst.ws.jaxws.ui"/>
     <tags>View</tags>
-    <tags>categoryTag:Web Services</tags>
+    <tags>categoryTag:Web Model.Services</tags>
   </descriptors>
   <descriptors xmi:id="_88UPUC-4Ee62jMkjw9rJhA" elementId="org.eclipse.lsp4e.callHierarchy.callHierarchyView" label="Call Hierarchy" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="Other" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <persistedState key="originalCompatibilityViewClass" value="org.eclipse.lsp4e.callhierarchy.CallHierarchyView"/>
@@ -3246,7 +3246,7 @@
   <commands xmi:id="_86xXMC-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.wst.web.ui.wizardsActionSet/org.eclipse.wst.web.ui.actions.newCSSFile" commandName="CSS" description="Create a new Cascading Style Sheet" category="_8RtzJC-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_86xXMS-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.wst.web.ui.wizardsActionSet/org.eclipse.wst.web.ui.actions.newJSFile" commandName="JavaScript" description="Create a new JavaScript file" category="_8RtzJC-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_86x-QC-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.wst.web.ui.wizardsActionSet/org.eclipse.wst.web.ui.actions.newHTMLFile" commandName="HTML" description="Create a new HTML page" category="_8RtzJC-4Ee62jMkjw9rJhA"/>
-  <commands xmi:id="_86x-QS-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.wst.ws.explorer.explorer/org.eclipse.wst.ws.internal.explorer.action.LaunchWSEAction" commandName="Launch the Web Services Explorer" description="Launch the Web Services Explorer" category="_8RtzJC-4Ee62jMkjw9rJhA"/>
+  <commands xmi:id="_86x-QS-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.wst.ws.explorer.explorer/org.eclipse.wst.ws.internal.explorer.action.LaunchWSEAction" commandName="Launch the Web Model.Services Explorer" description="Launch the Web Model.Services Explorer" category="_8RtzJC-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_86ylUC-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.ant.ui.BreakpointRulerActions/org.eclipse.ant.ui.actions.ManageBreakpointRulerAction" commandName="Toggle Breakpoint" category="_8RtzJC-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_86zMYC-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.datatools.sqltools.rullerDoubleClick/org.eclipse.jdt.debug.ui.actions.ManageBreakpointRulerAction" commandName="Add Breakpoint" category="_8RtzJC-4Ee62jMkjw9rJhA"/>
   <commands xmi:id="_86zMYS-4Ee62jMkjw9rJhA" elementId="AUTOGEN:::org.eclipse.emf.exporter.genModelEditorContribution/org.eclipse.emf.exporter.ui.GenModelExportActionDelegate.Editor" commandName="Export Model..." category="_8RtzJC-4Ee62jMkjw9rJhA"/>
