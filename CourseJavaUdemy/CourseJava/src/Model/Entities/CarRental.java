@@ -7,8 +7,8 @@ public class CarRental {
     private LocalDateTime start;
     private LocalDateTime finish;
 
-    private Vehicle vehicle;
     private Invoice invoice;
+    private Vehicle vehicle;
 
     public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle vehicle) {
         this.start = start;
@@ -32,19 +32,19 @@ public class CarRental {
         this.finish = finish;
     }
 
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
-    }
-
     public Invoice getInvoice() {
         return invoice;
     }
 
     public void setInvoice(Invoice invoice) {
         this.invoice = invoice;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
     }
 }

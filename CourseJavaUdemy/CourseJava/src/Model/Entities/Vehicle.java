@@ -1,18 +1,17 @@
 package Model.Entities;
 
 public class Vehicle {
+    private String modelCar;
 
-    private String carModel;
-
-    public Vehicle(String carModel) {
-        this.carModel = carModel;
+    public Vehicle(String modelCar) {
+        this.modelCar = modelCar;
     }
 
-    public String getCarModel() {
-        return carModel;
+    public String getModelCar() {
+        return modelCar;
     }
 
-    public void setCarModel(String carModel) {
-        this.carModel = carModel;
+    public void setModelCar(String modelCar) {
+        this.modelCar = modelCar;
     }
 }
