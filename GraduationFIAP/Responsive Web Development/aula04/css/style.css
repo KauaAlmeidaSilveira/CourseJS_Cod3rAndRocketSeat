@@ -1,0 +1,12 @@
+body{
+    background-image:url(../img/fiapBackground.jfif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: silver;
+}
+
+.img, #img {
+    width: 400px;
+    height: 350px;
+}
