@@ -2,96 +2,107 @@ package Model.Entities;
 
 import java.io.PrintStream;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
 
-	private Integer Id;
-	protected String Name;
-	private Double GrossSalary;
-	private Double Tax;
-	protected Integer Hour;
-	protected Double VlrPerHour;
+	private Integer id;
+	protected String name;
+	private Double grossSalary;
+	private Double tax;
+	protected Integer hour;
+	protected Double vlrPerHour;
 	
 	Boolean update = false;
 
+	public Employee(String name, Double grossSalary) {
+		this.name = name;
+		this.grossSalary = grossSalary;
+	}
+
 	public Employee(String name, Integer hour, Double vlrPerHour) {
-		Name = name;
-		Hour = hour;
-		VlrPerHour = vlrPerHour;
+		this.name = name;
+		this.hour = hour;
+		this.vlrPerHour = vlrPerHour;
 	}
 
 	public Employee(Integer id, String name, Double grossSalary) {
-		Id = id;
-		Name = name;
-		GrossSalary = grossSalary;
+		this.id = id;
+		this.name = name;
+		this.grossSalary = grossSalary;
 	}
 
 	public Employee(String name, Double grossSalary, Double tax) {
-		Name = name;
-		GrossSalary = grossSalary;
-		Tax = tax;
+		this.name = name;
+		this.grossSalary = grossSalary;
+		this.tax = tax;
 	}
 
 	public double netSalary() {
-		return this.GrossSalary - this.Tax;
+		return this.grossSalary - this.tax;
 	}
 	
 	public void increaseSalary(double percentage) {
-		this.GrossSalary *= (1 + (percentage/100));
+		this.grossSalary *= (1 + (percentage/100));
 	}
 	
 	public PrintStream showInfoEmployee() {
 		if(!this.update) {
 			this.update = true;
-			return System.out.printf("%nEmployee: %s, $ %.2f%n%n", this.Name, this.netSalary());
+			return System.out.printf("%nEmployee: %s, $ %.2f%n%n", this.name, this.netSalary());
 		}
-		return System.out.printf("%nUpdate data: %s, $ %.2f%n", this.Name, this.netSalary());
+		return System.out.printf("%nUpdate data: %s, $ %.2f%n", this.name, this.netSalary());
 	}
 
 	public Double getGrossSalary() {
-		return GrossSalary;
+		return grossSalary;
 	}
 
 	public void setGrossSalary(Double grossSalary) {
-		GrossSalary = grossSalary;
+		this.grossSalary = grossSalary;
 	}
 
 	public Double getTax() {
-		return Tax;
+		return tax;
 	}
 
 	public void setTax(Double tax) {
-		Tax = tax;
+		this.tax = tax;
 	}
 
 	public Integer getId() {
-		return Id;
+		return id;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 	
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public Integer getHour() {
-		return Hour;
+		return hour;
 	}
 
 	public void setHour(Integer hour) {
-		Hour = hour;
+		this.hour = hour;
 	}
 
 	public Double getVlrPerHour() {
-		return VlrPerHour;
+		return vlrPerHour;
 	}
 
 	public void setVlrPerHour(Double vlrPerHour) {
-		VlrPerHour = vlrPerHour;
+		this.vlrPerHour = vlrPerHour;
 	}
 
 	public Double payment(){
-		return Hour*VlrPerHour;
+		return hour * vlrPerHour;
+	}
+
+	@Override
+	public int compareTo(Employee other) {
+		return getName().compareTo(other.getName());
+		// return getGrossSalary().compareTo(other.getGrossSalary());
 	}
 }
