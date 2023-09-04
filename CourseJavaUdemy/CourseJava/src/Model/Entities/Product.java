@@ -2,7 +2,7 @@ package Model.Entities;
 
 import java.io.PrintStream;
 
-public class Product {
+public class Product implements Comparable<Product>{
 
 	protected String Name;
 	protected Double Price;
@@ -78,5 +78,15 @@ public class Product {
 
 	public String summary(){
 		return String.format("%s, %.2f", Name, totalPrice());
+	}
+
+	@Override
+	public String toString() {
+		return getName() + ", " + getPrice();
+	}
+
+	@Override
+	public int compareTo(Product o) {
+		return getPrice().compareTo(o.getPrice());
 	}
 }
