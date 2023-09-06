@@ -1,26 +1,30 @@
 package br.com.fiap.main;
 
+import br.com.fiap.beans.Address;
 import br.com.fiap.beans.Client;
 
 import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter client name: ");
-        String name = sc.nextLine();
+        String name = JOptionPane.showInputDialog("Enter client name: ");
+        
+        String email = JOptionPane.showInputDialog("Enter client email: ");
 
-        System.out.print("Enter client age: ");
-        int age = sc.nextInt();
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter client age: "));
 
-        System.out.print("Enter the value of consult: ");
-        double vlrConsult = sc.nextDouble();
+        double vlrConsult = Double.parseDouble(JOptionPane.showInputDialog("Enter the value of consult: "));
+        
+        String logradouro = JOptionPane.showInputDialog("Enter your place: ");
 
-        Client client = new Client(name, age, vlrConsult);
+        Client client = new Client(name, email, age, vlrConsult, new Address(logradouro));
 
-        System.out.println("\nINFO CLIENT: ");
+        System.out.println("INFO CLIENT: ");
 
         System.out.println(client.toString());
 
