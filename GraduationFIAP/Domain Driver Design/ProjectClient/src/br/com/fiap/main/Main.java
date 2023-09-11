@@ -24,7 +24,7 @@ public class Main {
 
         Client client = new Client(name, email, age, vlrConsult, new Address(logradouro));
 
-        System.out.println("INFO CLIENT: ");
+        System.out.println("INFO CLIENT");
 
         System.out.println(client.toString());
 
