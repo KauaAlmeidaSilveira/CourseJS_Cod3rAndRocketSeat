@@ -1,6 +1,7 @@
 package Model.Entities;
 
 import java.io.PrintStream;
+import java.util.Objects;
 
 public class Product implements Comparable<Product>{
 
@@ -80,6 +81,20 @@ public class Product implements Comparable<Product>{
 		return String.format("%s, %.2f", Name, totalPrice());
 	}
 
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Product product = (Product) o;
+		return Objects.equals(Name, product.Name) && Objects.equals(Price, product.Price);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(Name, Price);
+	}
+
 	@Override
 	public String toString() {
 		return getName() + ", " + getPrice();
@@ -87,6 +102,6 @@ public class Product implements Comparable<Product>{
 
 	@Override
 	public int compareTo(Product o) {
-		return getPrice().compareTo(o.getPrice());
+		return getName().toUpperCase().compareTo(o.getName().toUpperCase());
 	}
 }
