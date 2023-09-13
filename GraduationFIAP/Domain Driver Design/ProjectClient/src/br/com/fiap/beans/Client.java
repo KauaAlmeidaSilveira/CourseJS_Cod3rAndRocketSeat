@@ -3,16 +3,40 @@ package br.com.fiap.beans;
 public class Client {
 
     private String name;
+    private String cpf;
+    private Address address;
     private String email;
     private Integer age;
-    private Double vlrConsult;
-    private Address address;
 
-	public Client(String name, String email, Integer age, Double vlrConsult, Address address) {
+    public Client(String name, String cpf, Address address, String email, Integer age) {
 		this.name = name;
+		this.cpf = cpf;
+		this.address = address;
 		this.email = email;
 		this.age = age;
-		this.vlrConsult = vlrConsult;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 
@@ -24,32 +48,20 @@ public class Client {
 		this.email = email;
 	}
 
-	public String getName() {
-        return name;
-    }
+	public Integer getAge() {
+		return age;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setAge(Integer age) {
+		this.age = age;
+	}
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public Double getVlrConsult() {
-        return vlrConsult;
-    }
-
-    public void setVlrConsult(Double vlrConsult) {
-        this.vlrConsult = vlrConsult;
-    }
-
-    @Override
+	@Override
     public String toString() {
         return "Name: " + name + "\n" +
-        	   "Email: " + email + "\n" +
-               "Age: " + age + "\n" +
-               "Value consult: " + vlrConsult + "\n" +
-               "Your address: " + address.getLogradouro();
+               "CPF: " + cpf + "\n" +
+               "Email: " + email + "\n" +
+               "Age: " + age;
     }
+
 }

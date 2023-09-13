@@ -17,16 +17,34 @@ public class Main {
         String email = JOptionPane.showInputDialog("Enter client email: ");
 
         int age = Integer.parseInt(JOptionPane.showInputDialog("Enter client age: "));
-
-        double vlrConsult = Double.parseDouble(JOptionPane.showInputDialog("Enter the value of consult: "));
+        
+        String cpf = JOptionPane.showInputDialog("Enter client cpf: ");
         
         String logradouro = JOptionPane.showInputDialog("Enter your place: ");
+        
+        int num = Integer.parseInt(JOptionPane.showInputDialog("Enter number: "));
+        
+        int cep = Integer.parseInt(JOptionPane.showInputDialog("Enter cep: "));
+        
+        String bairro = JOptionPane.showInputDialog("Enter bairro: ");
+        
+        String municipio = JOptionPane.showInputDialog("Enter municipio: ");
+        
+        String cidade = JOptionPane.showInputDialog("Enter cidade: ");
+        
+        String nacionalidade = JOptionPane.showInputDialog("Enter nacionalidade: ");
+        
+        Address address = new Address(logradouro, num, cep, bairro, municipio, cidade, nacionalidade);
+        
+        Client client = new Client(name, cpf, address, email, age);
 
-        Client client = new Client(name, email, age, vlrConsult, new Address(logradouro));
-
-        System.out.println("INFO CLIENT");
+        System.out.println("INFO CLIENT\n");
 
         System.out.println(client.toString());
+        
+        System.out.println("\nINFO ADDRESS\n");
+        
+        System.out.println(client.getAddress());
 
         sc.close();
 

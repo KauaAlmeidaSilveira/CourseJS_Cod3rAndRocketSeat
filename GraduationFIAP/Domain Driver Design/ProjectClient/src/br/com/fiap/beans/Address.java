@@ -4,21 +4,21 @@ public class Address {
 
 	private String logradouro;
 	private int num;
+	private int cep;
 	private String bairro;
 	private String municipio;
-	private String estado;
+	private String cidade;
+	private String nacionalidade;
 
-	
-	public Address(String logradouro) {
-		this.logradouro = logradouro;
-	}
-
-	public Address(String logradouro, int num, String bairro, String municipio, String estado) {
+	public Address(String logradouro, int num, int cep, String bairro, String municipio, String cidade,
+			String nacionalidade) {
 		this.logradouro = logradouro;
 		this.num = num;
+		this.cep = cep;
 		this.bairro = bairro;
 		this.municipio = municipio;
-		this.estado = estado;
+		this.cidade = cidade;
+		this.nacionalidade = nacionalidade;
 	}
 
 	public String getLogradouro() {
@@ -37,6 +37,14 @@ public class Address {
 		this.num = num;
 	}
 
+	public int getCep() {
+		return cep;
+	}
+
+	public void setCep(int cep) {
+		this.cep = cep;
+	}
+
 	public String getBairro() {
 		return bairro;
 	}
@@ -53,13 +61,31 @@ public class Address {
 		this.municipio = municipio;
 	}
 
-	public String getEstado() {
-		return estado;
+	public String getCidade() {
+		return cidade;
 	}
 
-	public void setEstado(String estado) {
-		this.estado = estado;
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+	public String getNacionalidade() {
+		return nacionalidade;
+	}
+
+	public void setNacionalidade(String nacionalidade) {
+		this.nacionalidade = nacionalidade;
 	}
 	
+    @Override
+    public String toString() {
+        return "Logradouro: " + logradouro + "\n" +
+               "Número: " + num + "\n" +
+               "CEP: " + cep + "\n" +
+               "Bairro: " + bairro + "\n" +
+               "Município: " + municipio + "\n" +
+               "Cidade: " + cidade + "\n" +
+               "Nacionalidade: " + nacionalidade;
+    }
 	
 }
