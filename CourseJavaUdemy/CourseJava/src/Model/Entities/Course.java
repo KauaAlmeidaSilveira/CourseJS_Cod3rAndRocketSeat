@@ -1,13 +1,12 @@
 package Model.Entities;
 
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Course {
 
     private String title;
     private String subject;
-    public List<Student> students;
+    private Set<Student> students = new HashSet<>();
 
     public Course(String title, String subject) {
         this.title = title;
@@ -22,6 +21,22 @@ public class Course {
         this.subject = subject;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Set<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(Set<Student> students) {
+        this.students = students;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -33,5 +48,12 @@ public class Course {
     @Override
     public int hashCode() {
         return Objects.hash(subject);
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "title='" + title + '\'' +
+                '}';
     }
 }
