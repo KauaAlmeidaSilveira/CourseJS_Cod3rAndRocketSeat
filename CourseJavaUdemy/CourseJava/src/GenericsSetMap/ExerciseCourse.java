@@ -16,37 +16,23 @@ public class ExerciseCourse {
         courses.add(new Course("Python", "Logic"));
         courses.add(new Course("BD", "UML"));
 
+        for (Course course : courses) {
+            System.out.print("How many students for course " + course.getTitle() + "? ");
+            int qntStudents = sc.nextInt();
+
+            for (int i = 0; i < qntStudents; i++) {
+                int code = sc.nextInt();
+                course.getStudents().add(new Student(code));
+            }
+        }
+
         Instructor instructor = new Instructor("Kaua", courses);
-
-        System.out.print("How many students for course A? ");
-        int qntStudentsA = sc.nextInt();
-
-        for(int i= 0; i<qntStudentsA; i++){
-            int code = sc.nextInt();
-            instructor.getCourses().get(0).getStudents().add(new Student(code));
-        }
-
-        System.out.print("How many students for course B? ");
-        int qntStudentsB = sc.nextInt();
-
-        for(int i= 0; i<qntStudentsB; i++){
-            int code = sc.nextInt();
-            instructor.getCourses().get(1).getStudents().add(new Student(code));
-        }
-
-        System.out.print("How many students for course C? ");
-        int qntStudentsC = sc.nextInt();
-
-        for(int i= 0; i<qntStudentsC; i++){
-            int code = sc.nextInt();
-            instructor.getCourses().get(2).getStudents().add(new Student(code));
-        }
 
         Set<Student> totalStudents = new HashSet<>();
 
-        totalStudents.addAll(instructor.getCourses().get(0).getStudents());
-        totalStudents.addAll(instructor.getCourses().get(1).getStudents());
-        totalStudents.addAll(instructor.getCourses().get(2).getStudents());
+        for (int i=0; i<instructor.getCourses().size(); i++) {
+            totalStudents.addAll(instructor.getCourses().get(i).getStudents());
+        }
 
         System.out.printf("Total students: %d", totalStudents.size());
 
