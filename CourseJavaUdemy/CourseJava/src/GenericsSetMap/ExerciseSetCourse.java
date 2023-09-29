@@ -6,7 +6,7 @@ import Model.Entities.Student;
 
 import java.util.*;
 
-public class ExerciseCourse {
+public class ExerciseSetCourse {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
