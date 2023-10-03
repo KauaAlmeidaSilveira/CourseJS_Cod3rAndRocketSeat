@@ -6,12 +6,19 @@ public class Employee implements Comparable<Employee>{
 
 	private Integer id;
 	protected String name;
+	private String email;
 	private Double grossSalary;
 	private Double tax;
 	protected Integer hour;
 	protected Double vlrPerHour;
 	
 	Boolean update = false;
+
+	public Employee(String name, String email, Double grossSalary) {
+		this.name = name;
+		this.email = email;
+		this.grossSalary = grossSalary;
+	}
 
 	public Employee(String name, Double grossSalary) {
 		this.name = name;
@@ -96,6 +103,14 @@ public class Employee implements Comparable<Employee>{
 		this.vlrPerHour = vlrPerHour;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public Double payment(){
 		return hour * vlrPerHour;
 	}
@@ -104,5 +119,10 @@ public class Employee implements Comparable<Employee>{
 	public int compareTo(Employee other) {
 		return getName().compareTo(other.getName());
 		// return getGrossSalary().compareTo(other.getGrossSalary());
+	}
+
+	@Override
+	public String toString() {
+		return name + ", " + email + ", " + grossSalary;
 	}
 }
