@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+</head>
+<body>
+    
+    <h1 class="title">SalesForce Cadastre</h1>
+
+    <div class="wrapper">
+
+        <div class="cadastre">
+    
+            <form class="formCadastre" name="formCadastre" action="" method="POST">
+    
+                <label>Nome: 
+                    <input type="text" name="txtName" id="txtName" 
+                        placeholder="Enter your name"maxlength="100"
+                        accesskey="n" tabindex="1">
+                </label>
+                
+                <label>Bithdate: 
+                    <input type="date" name="bithdate" id="bithdate"
+                        min="2003-01-01" max="2023-12-01">
+                </label>
+
+                <label>CPF: 
+                    <input type="text" name="cpf" id="cpf"
+                        maxlength="14">
+                </label>
+
+                <label>Tel: 
+                    <input type="tel" name="tel" id="tel"
+                        maxlength="14">
+                </label>
+
+                <label>UF:
+
+                    <select name="uf" id="uf">
+                        <option>...</option>
+                        <optgroup label="Região Sul">
+                            <option value="RS">Rio grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="PR">Paraná</option>
+                        </optgroup>
+                        <optgroup label="Região Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                    </select>
+
+                </label>
+
+                <label>Password:
+                    <input type="password" name="password" id="password">
+                </label>
+
+                <label>Concordo com os termos:
+                    <input type="checkbox" name="checkBox" id="checkBox" value="true">
+                </label>
+
+                <input class="inputSubmit" type="submit" value="Submit">
+
+            </form>
+
+        </div>
+    
+        <main class="main">
+            <h1>teste</h1>
+        </main>
+
+    </div>
+
+</body>
+</html>

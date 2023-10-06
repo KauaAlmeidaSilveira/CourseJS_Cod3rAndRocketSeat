@@ -1,0 +1,36 @@
+body{
+    background-color: whitesmoke;
+}
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.cadastre{
+    background-color: aqua;
+    width: 50%;
+    height: 100%;
+    padding: 10px 5px 10px 5px; 
+}
+
+.formCadastre{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputSubmit{
+    width: 40%;
+}
+
+.main{
+    background-color: blueviolet;
+    width: 50%;
+    height: 100%;
+}
+
