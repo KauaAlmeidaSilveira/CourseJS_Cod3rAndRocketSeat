@@ -76,9 +76,8 @@
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>8 CHAR</dataTypeSize>
-<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Pais" id="91ED8285-B9A8-609C-334A-00431E800516">
 <createdBy>Kauã</createdBy>
@@ -90,12 +89,11 @@ BR
 <engineerTo>
 <item key="139CB80B-3E46-F29E-51AF-CDDA0FBB1E54" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Id1" id="06EFFA9A-9D57-6537-19AE-51A816D4D2A5">
 <createdBy>Kauã</createdBy>
@@ -108,7 +106,8 @@ BR
 <referedAttribute>43DE73D7-EDB3-9C61-C0A3-98655C17263D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>36 CHAR</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
