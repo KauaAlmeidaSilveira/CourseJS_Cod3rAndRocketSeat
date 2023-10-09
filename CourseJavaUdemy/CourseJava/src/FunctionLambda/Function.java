@@ -18,6 +18,14 @@ public class Function {
 
         List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
 
+        ProductService ps = new ProductService();
+
+        double sum = ps.filteredSum(list, p -> p.getPrice() > 20);
+        //double sum = list.stream().filter(p -> p.getPrice() > 20).mapToDouble(Product::getPrice).sum();
+
+
         names.forEach(System.out::println);
+        System.out.println("Sum: " + sum);
     }
 }
+
