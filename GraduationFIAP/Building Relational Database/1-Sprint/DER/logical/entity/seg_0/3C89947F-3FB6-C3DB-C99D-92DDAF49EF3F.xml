@@ -37,21 +37,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Email" id="27065B3F-F37F-C2D6-CC05-3AD95592643F">
-<createdBy>Kauã</createdBy>
-<createdTime>2023-10-08 23:13:59 UTC</createdTime>
-<ownerDesignName>DER</ownerDesignName>
-<engineerTo>
-<item key="139CB80B-3E46-F29E-51AF-CDDA0FBB1E54" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Apelido" id="75405CB4-5FBB-42E9-79FA-84B7D537EB7A">
 <createdBy>Kauã</createdBy>
@@ -63,8 +50,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Telefone" id="CB101BB5-CA73-B037-2DB0-36C21DD58A4B">
 <createdBy>Kauã</createdBy>
@@ -78,8 +65,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>9</dataTypeSize>
-<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Celular" id="FC3910C3-7194-9F9D-BE61-71822204A397">
 <createdBy>Kauã</createdBy>
@@ -93,23 +80,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Usuario" id="B84F3398-02C0-9930-00F9-BBA9AC5F0A2C">
-<createdBy>Kauã</createdBy>
-<createdTime>2023-10-08 23:34:27 UTC</createdTime>
-<commentInRDBMS><![CDATA[Ex: comecoEmail@force.com]]></commentInRDBMS>
-<ownerDesignName>DER</ownerDesignName>
-<engineerTo>
-<item key="139CB80B-3E46-F29E-51AF-CDDA0FBB1E54" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
