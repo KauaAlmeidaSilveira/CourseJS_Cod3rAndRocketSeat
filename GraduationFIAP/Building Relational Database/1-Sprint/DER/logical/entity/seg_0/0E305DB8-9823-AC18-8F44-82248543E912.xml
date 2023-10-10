@@ -91,7 +91,6 @@ Pix]]></commentInRDBMS>
 <engineerTo>
 <item key="139CB80B-3E46-F29E-51AF-CDDA0FBB1E54" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
