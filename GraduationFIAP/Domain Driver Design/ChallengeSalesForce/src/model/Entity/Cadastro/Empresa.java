@@ -86,7 +86,7 @@ public class Empresa {
 
     @Override
     public String toString() {
-        return "Empresa " + "\n\n" +
+        return "Empresa " + "\n" +
                 "Id: "+ id + "\n" +
                 "Nome: "+ nome + "\n" +
                 "Cargo: " + cargo + "\n" +

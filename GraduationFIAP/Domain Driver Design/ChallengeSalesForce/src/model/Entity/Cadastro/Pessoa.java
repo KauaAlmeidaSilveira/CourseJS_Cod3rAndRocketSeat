@@ -120,7 +120,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa " + "\n\n" +
+        return "Pessoa " + "\n" +
                 "Id: "+ id + "\n" +
                 "Nome: "+ nome + "\n" +
                 "Apelido: " + apelido + "\n" +

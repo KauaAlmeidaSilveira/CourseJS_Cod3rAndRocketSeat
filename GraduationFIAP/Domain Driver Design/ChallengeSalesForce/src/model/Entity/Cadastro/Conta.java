@@ -1,7 +1,11 @@
 package model.Entity.Cadastro;
 
+import model.Entity.Servico.Servico;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Conta {
@@ -13,11 +17,14 @@ public class Conta {
     private LocalDate dataRegistro;
     private LocalDateTime ultimoAcesso;
 
+    private List<Servico> servico;
+
     public Conta(String usuario, String email, String senha) {
         this.usuario = usuario;
         this.email = email;
         this.senha = senha;
         this.dataRegistro = LocalDate.now();
+        this.servico = new ArrayList<>();
     }
 
     public Long getId() {
@@ -68,6 +75,16 @@ public class Conta {
         this.ultimoAcesso = ultimoAcesso;
     }
 
+    public List<Servico> getServico() {
+        return servico;
+    }
+
+    public void addServico(Servico servico){
+        if (servico != null){
+            this.servico.add(servico);
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -83,10 +100,11 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Conta " + "\n\n" +
+        return "Conta " + "\n" +
                 "Id: "+ id + "\n" +
                 "Usuario: "+ usuario + "\n" +
                 "Email: " + email + "\n" +
-                "Senha: " + senha;
+                "Senha: " + senha + "\n" +
+                "Serviços: " + servico;
     }
 }
