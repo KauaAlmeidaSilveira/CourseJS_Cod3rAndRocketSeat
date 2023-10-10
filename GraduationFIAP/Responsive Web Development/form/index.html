@@ -18,28 +18,33 @@
 
         <div class="cadastre">
     
-            <form class="formCadastre" name="formCadastre" action="" method="POST">
+            <form class="formCadastre" name="formCadastre" action="" method="POST" enctype="multipart/form-data">
     
-                <label>Nome: 
-                    <input type="text" name="txtName" id="txtName" 
-                        placeholder="Enter your name"maxlength="100"
-                        accesskey="n" tabindex="1">
-                </label>
-                
-                <label>Bithdate: 
-                    <input type="date" name="bithdate" id="bithdate"
-                        min="2003-01-01" max="2023-12-01">
-                </label>
+                <fieldset class="fieldset">
+                    <legend>Dados Pessoais</legend>
 
-                <label>CPF: 
-                    <input type="text" name="cpf" id="cpf"
-                        maxlength="14">
-                </label>
+                    <label>Nome: 
+                        <input type="text" name="txtName" id="txtName" 
+                            placeholder="Enter your name"maxlength="100"
+                            accesskey="n" tabindex="1">
+                    </label>
+                    
+                    <label>Bithdate: 
+                        <input type="date" name="bithdate" id="bithdate"
+                            min="2003-01-01" max="2023-12-01">
+                    </label>
+    
+                    <label>CPF: 
+                        <input type="text" name="cpf" id="cpf"
+                            maxlength="14">
+                    </label>
+    
+                    <label>Tel: 
+                        <input type="tel" name="tel" id="tel"
+                            maxlength="14">
+                    </label>
 
-                <label>Tel: 
-                    <input type="tel" name="tel" id="tel"
-                        maxlength="14">
-                </label>
+                </fieldset>
 
                 <label>UF:
 
@@ -66,6 +71,48 @@
                 <label>Concordo com os termos:
                     <input type="checkbox" name="checkBox" id="checkBox" value="true">
                 </label>
+
+                <label>Enviar arquivo:
+                    <input type="file" name="upload" id="upload">
+                </label>
+
+                <label>Selecione o Mês:
+                    <input type="month" name="mes" id="mes">
+                </label>
+
+                <label>Observações:
+                    <textarea name="txtObs" id="txtObs" cols="30" rows="10"></textarea>
+                </label>
+
+                <label>Volume:
+                    <input type="range" name="rngVolume" id="rngVolume" min="0" max="50">
+                </label>
+
+                <label>Sexo: 
+                    <input type="radio" name="rdoSexo" id="rdoSexoM" value="M">Masculino
+                    <input type="radio" name="rdoSexo" id="rdoSexoF" value="F">Feminino
+                    <input type="radio" name="rdoSexo" id="rdoSexoO" value="O">Outros
+                </label>
+
+                <label>Select Color:
+                    <input type="color" name="pckColor" id="pckColor">
+                </label>
+
+                <label>Week: 
+                    <input type="week" name="txtWeek" id="txtWeek">
+                </label>
+
+                <label for="txtClubes">Digite um time:
+                    <input list="txtClubes">
+                    <datalist id="txtClubes">
+                        <option value="Corintians">
+                        <option value="Santos">
+                        <option value="São Paulo">
+                        <option value="Palmeiras">
+                    </datalist>
+                </label>
+
+                <input class="inputReset" type="reset" value="Apagar">
 
                 <input class="inputSubmit" type="submit" value="Submit">
 

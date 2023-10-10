@@ -24,6 +24,16 @@ body{
     gap: 1rem;
 }
 
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputReset{
+    width: 40%;
+}
+
 .inputSubmit{
     width: 40%;
 }
