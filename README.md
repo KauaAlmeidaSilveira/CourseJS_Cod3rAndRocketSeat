@@ -1,13 +1,25 @@
-# Meu Repositório de Estudos
-Este repositório foi criado exclusivamente para acompanhar minha jornada de estudos e registrar meu progresso em diferentes projetos e conceitos. Aqui, encontraremos uma variedade de projetos e tópicos, conforme eu for explorando e aprendendo coisas novas.
+# Curso de JavaScript e TypeScript
 
-## Motivação
-O objetivo deste repositório é manter um registro organizado das minhas atividades de aprendizado e permitir que eu acompanhe minha evolução ao longo do tempo. Estou comprometido em aprender coisas novas, adquirir conhecimento e aprimorar minhas habilidades de programação.
+Este repositório contém os materiais e recursos relacionados ao curso de JavaScript e TypeScript com foco no desenvolvimento backend. Durante o curso, abordamos os seguintes tópicos:
 
-## Agradecimento
+## Tópicos Abordados
 
-Agradeço por acompanhar minha jornada de estudos! Sinta-se à vontade para explorar os projetos e conceitos aqui documentados. Se você tiver alguma sugestão, feedback ou correção, não hesite em entrar em contato comigo.
+- **JavaScript e TypeScript**: Aprendemos a linguagem de programação JavaScript e TypeScript, suas sintaxes, estruturas de controle e como aplicá-las no desenvolvimento backend.
 
-Vamos juntos nessa busca constante pelo conhecimento e pelo aprimoramento das minhas habilidades técnicas.
+- **Desenvolvimento Backend**: Exploramos os conceitos e práticas para criar aplicações backend robustas, escaláveis e seguras.
 
-**Obrigado!**
+- **Integração com Banco de Dados**: Aprendemos a conectar nossa aplicação backend a bancos de dados, realizar consultas, inserções e atualizações de dados.
+
+- **Documentação de API com Swagger**: Demonstramos como criar documentação de API usando a ferramenta Swagger, tornando mais fácil para os desenvolvedores entender e usar nossos serviços.
+
+- **HTML e CSS**: Cobrimos noções básicas de HTML e CSS para criar interfaces web atraentes para nossas aplicações.
+
+## Estrutura do Repositório
+
+O repositório está organizado da seguinte forma:
+
+- **Exemplos de Código**: Aqui você encontrará exemplos de código relacionados aos tópicos do curso. Os exemplos estão organizados em diretórios separados.
+
+- **Projetos**: Esta pasta contém projetos práticos que aplicam os conceitos aprendidos no curso. Cada projeto possui sua própria pasta.
+
+- **Documentação**: Contém documentação adicional, guias e recursos úteis relacionados ao curso.
